@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.background{
+    position: fixed;
+    z-index: -1;
+}
+.top{
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+.bottom{
+    position: absolute;
+    right: -1540px;
+    bottom: -800px;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    width: 60%;
+    padding: 106px;
+    color: hsl(303, 10%, 53%);
+}
+.text p{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: hsl(300, 43%, 22%);
+}
+
+
+.starBox{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+.box1, .box2, .box3{
+    background-color: hsl(300, 24%, 96%);
+    margin: 7px;
+    padding: 15px 24px 18px 31px;
+    width: 370px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.box2{
+    margin-left: 50px;
+}
+.box3{
+    margin-left: 100px;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+}
+.textInside{
+    text-align: right;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: -45px 130px;
+}
+
+.singleCard1,.singleCard2,.singleCard3{
+    color: white;
+    background-color: hsl(300, 43%, 22%);
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    width: 330px;
+    height: max-content;
+}
+.singleCard2{
+    margin-top: 30px;
+}
+.singleCard3{
+    margin-top: 60px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.image{
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 500px){
+    .flex-container{
+        flex-direction: column;
+    }
+    .text{
+        padding: 10px;
+        width: auto;
+        text-align: center;
+    }
+    .starBox{
+        width: auto;
+        align-items: center;
+    }
+    .box1,.box2,.box3{
+        width: 111%;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .cards{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        align-items: center;
+    }
+    .singleCard1,.singleCard2,.singleCard3{
+        margin: 0px;
+        margin-top: 10px;
+        width: 75%;
+    }
+}
